@@ -13,23 +13,37 @@
             padding: 0;
             min-height: 100vh;
             font-family: sans-serif;
-            background: linear-gradient(135deg, #1F4F6D,#4B6C63 ,#8B4C39,#d8a572 ,#5C4B51,#D9BF77,#9A8B9F,#F5E1A4 );
+            background: linear-gradient(135deg, #afc2ce, #4B6C63, #e9d1ca, #d8b797, #e2cfd6, #d3c49f, #e3d1e9, #cfc9b6);
             background-size: 800% 800%;
             animation: gradient 20s ease infinite;
         }
 
         @keyframes gradient {
-            0% { background-position: 0% 0%; }
-            25% { background-position: 100% 0%; }
-            50% { background-position: 100% 100%; }
-            75% { background-position: 0% 100%; }
-            100% { background-position: 0% 0%; }
+            0% {
+                background-position: 0% 0%;
+            }
+
+            25% {
+                background-position: 100% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
         }
 
         header {
             color: #000000;
             text-align: center;
-            padding: 40px;
+            padding: 20px 40px 20px 40px; /* Reduced top padding */
         }
 
         header h1 {
@@ -37,12 +51,9 @@
             font-size: 80px;
         }
 
-        header img {
-            border-radius: 5%;
-            margin-top: 20px;
-            width: 700px;
-            height: 350px;
-            object-fit: cover;
+        header h2 {
+            margin-top: 5px; /* Reduced the space from above */
+            font-size: 70px; /* Increased font size */
         }
 
         .logos {
@@ -166,31 +177,31 @@
         }
 
         .container .card:nth-child(1) .icon {
-            background: #ea4335; /* Gmail */
+            background: #ea4335;
         }
 
         .container .card:nth-child(2) .icon {
-            background: #3ddc84; /* Android (Phone) */
+            background: #3ddc84;
         }
 
         .container .card:nth-child(3) .icon {
-            background: #0077b5; /* LinkedIn */
+            background: #0077b5;
         }
 
         .container .card:nth-child(4) .icon {
-            background: #e4405f; /* Instagram */
+            background: #e4405f;
         }
 
         .container .card:nth-child(5) .icon {
-            background: #1da1f2; /* Twitter */
+            background: #1da1f2;
         }
 
         .container .card:nth-child(6) .icon {
-            background: #4267b2; /* Facebook */
+            background: #4267b2;
         }
 
         .container .card:nth-child(7) .icon {
-            background: #333; /* GitHub */
+            background: #333;
         }
 
         .container .card .icon .fa {
@@ -200,69 +211,6 @@
             transform: translate(-50%, -50%);
             font-size: 80px;
             color: #fff;
-        }
-
-        .skills {
-            background: transparent;
-            color: #333;
-            padding: 40px 20px;
-        }
-
-        .skills .container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .skills .skill-card {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-            width: 80%;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .skills .skill-card img {
-            border-radius: 50%;
-            margin-right: 20px;
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-        }
-
-        .skills .skill-card .skill-info {
-            flex: 1;
-        }
-
-        .skills .skill-card .skill-info h3 {
-            margin: 0 0 10px;
-            font-size: 24px;
-        }
-
-        .skills .skill-card .skill-info .skill-bar {
-            background: #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            height: 20px;
-            margin-top: 10px;
-        }
-
-        .skills .skill-card .skill-info .skill-bar .skill-fill {
-            height: 100%;
-            background: #4caf50;
-            width: 0;
-            transition: width 1s;
-        }
-
-        .skills .skill-card:hover .skill-fill {
-            width: 20%; /* SolidWorks */
-        }
-
-        .skills .skill-card:hover .skill-fill {
-            width: 15%; /* AutoCAD */
         }
 
         .education {
@@ -300,7 +248,7 @@
 <body>
     <header>
         <h1>Md Mezanur Rahman Nobin</h1>
-        <img src="nobin.jpg" alt="Your Photo">
+     
     </header>
 
     <section class="contact-info section">
@@ -428,43 +376,16 @@
         </div>
     </section>
 
-    <section class="skills section">
-        <h2>Skills</h2>
-        <div class="container">
-            <div class="skill-card">
-                <img src="solidworks.jpg" alt="Your Photo">
-                <div class="skill-info">
-                    <h3>SolidWorks</h3>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 20%;"></div>
-                    </div>
-                    <p>Proficient in 3D modeling using SolidWorks.</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <img src="autocad.jpg" alt="Your Photo">
-                <div class="skill-info">
-                    <h3>AutoCAD</h3>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 15%;"></div>
-                    </div>
-                    <p>Experienced in drafting and designing 2D and 3D technical drawings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="education section">
         <h2>Education</h2>
         <div class="container">
             <div class="edu-card">
                 <h3>Rajshahi University of Engineering & Technology</h3>
                 <p>Bachelor of Science in Mechanical Engineering</p>
-                
-                <p>Currently studying</p>
             </div>
-            <!-- Add more education entries here if needed -->
         </div>
     </section>
 </body>
+
 </html>
+
